@@ -14,7 +14,7 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 // Set up CORS headers
-app.use((req, res, next) => {
+App.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
