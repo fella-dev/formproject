@@ -11,7 +11,7 @@ const App = express();
 const http = require("http");
 
 const server = http.createServer(App);
-const wss = new WebSocket.Server({ segitrver });
+const wss = new WebSocket.Server({ server });
 
 // Set up CORS headers
 App.use((req, res, next) => {
