@@ -8,6 +8,6 @@
     "nodemon": "^3.0.1"
   },
   "scripts": {
-    "build": "npm install && node server.js"
+    "build": "npm run build"
   }
 }
