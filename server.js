@@ -8,26 +8,6 @@ require("dotenv").config();
 
 const App = express();
 
-const http = require("http");
-
-const server = http.createServer(App);
-const wss = new WebSocket.Server({ server });
-
-// Set up CORS headers
-App.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
-// WebSocket server logic
-wss.on("connection", (ws) => {
-  // WebSocket connection handling
-});
-
 App.use(express.json());
 App.use(cors());
 
