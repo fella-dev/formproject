@@ -20,7 +20,8 @@ router.post("/", (req, res) => {
       res.send(data);
       console.log("user registred");
     });
-  } catch {
+  } catch (error) {
+    console.log(error);
     res.status(404);
     res.send("erreur d'envoie");
   }
